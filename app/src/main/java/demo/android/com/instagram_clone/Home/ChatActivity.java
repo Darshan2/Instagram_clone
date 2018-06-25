@@ -182,43 +182,7 @@ public class ChatActivity extends AppCompatActivity {
             }
         });
     }
-
-
-    private void handleNewlyAddedMessages() {
-        Query query =  myRef.child(getString(R.string.messages_node))
-                .child(currentUserId)
-                .child(mChatWithUser.getUser_id());
-
-        query.addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                Log.d(TAG, "onChildAdded: " + dataSnapshot);
-                mChatItemsList.add(dataSnapshot.getValue(ChatItem.class));
-                adapter.notifyItemChanged(mChatItemsList.size() - 1);
-            }
-
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-    }
-
+    
 
 
 
