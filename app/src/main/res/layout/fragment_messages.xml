@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayout1">
+
+        <include layout="@layout/snippet_top_chat_toolbar"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/relLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60sp"
+        android:id="@+id/recyclerMessageList">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!--Bottom box -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/white_grey_border_top"
+        android:layout_height="60sp"
+        android:paddingHorizontal="5sp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image1"
+            android:src="@drawable/ic_message_arrow"
+            android:layout_marginRight="5sp"/>
+
+        <EditText
+            android:paddingHorizontal="3sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40sp"
+            android:layout_toRightOf="@id/image1"
+            android:background="@drawable/white_grey_border_top"
+            android:textColor="@color/black"
+            android:hint="Type message..........."
+            android:id="@+id/comment_text"/>
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_check_mark"
+            android:layout_marginRight="5sp"
+            android:id="@+id/checkMark"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

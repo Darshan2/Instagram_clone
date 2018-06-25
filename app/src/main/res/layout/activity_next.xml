@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="demo.android.com.instagram_clone.Share.NextActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/relLayout1">
+
+               <include layout="@layout/snippet_top_share_toolbar"/>
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/relLayout1"
+               android:paddingVertical="20sp"
+               android:background="@drawable/grey_border_bottom">
+
+               <ImageView
+                   android:layout_width="100sp"
+                   android:layout_height="100sp"
+                   android:layout_marginLeft="20sp"
+                   android:id="@+id/ShareImage"
+                   android:src="@drawable/ic_android"
+                   android:scaleType="centerCrop"/>
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@id/ShareImage"
+                   android:background="@null"
+                   android:hint="Write image caption"
+                   android:id="@+id/caption"
+                   android:layout_centerVertical="true"
+                   android:layout_marginHorizontal="5sp"/>
+
+           </RelativeLayout>
+
+       </RelativeLayout>
+
+   </ScrollView>
+
+    <ProgressBar
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="info"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:id="@+id/infoTV"/>
+
+</RelativeLayout>

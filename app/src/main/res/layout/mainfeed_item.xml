@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_grey_border"
+        android:paddingBottom="10sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:id="@+id/relLayout1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginLeft="20sp"
+                app:civ_border_width="0.5sp"
+                android:layout_centerVertical="true"
+                app:civ_border_color="@color/black"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_profile"
+                android:id="@+id/profile_photo"/>
+
+            <TextView
+                android:layout_marginLeft="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/profile_photo"
+                android:text="Darshan"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:id="@+id/user_name"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:src="@drawable/ic_more_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20sp"
+                android:id="@+id/profileMenu"/>
+
+        </RelativeLayout>
+
+        <demo.android.com.instagram_clone.Utils.SquareRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relLayout1"
+            android:id="@id/relLayout2">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_centerInParent="true"
+                android:id="@+id/postImage"/>
+        </demo.android.com.instagram_clone.Utils.SquareRelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_below="@id/relLayout2"
+            android:id="@+id/relLayout3"
+            android:paddingHorizontal="20sp"
+            android:layout_marginBottom="15sp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/relLayout4">
+
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:padding="5.5sp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_heart_icon_red_fill"
+                    android:id="@+id/likeHeart_red" />
+
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:padding="5.5sp"
+                    android:background="@color/white"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_heart_icon_black_hollow"
+                    android:id="@+id/likeHeart_white"/>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_comment_bubblee"
+                android:id="@+id/commentBubble"
+                android:layout_marginLeft="20sp"
+                android:layout_toRightOf="@id/relLayout4"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relLayout3"
+            android:paddingHorizontal="15sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Liked by name1, name2"
+                android:textColor="@color/black"
+                android:id="@+id/image_likes"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_likes"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:text="Darshan nature #nature #greenary"
+                android:textColor="@color/black"
+                android:id="@+id/image_caption"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_caption"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:text="See all 3 comments"
+                android:textColor="@color/grey"
+                android:id="@+id/image_comments_link"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_comments_link"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:text="3 DAYS AGO"
+                android:textColor="@color/grey"
+                android:id="@+id/image_postedTime"/>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

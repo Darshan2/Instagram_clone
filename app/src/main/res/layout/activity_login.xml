@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="25sp"
+        android:layout_marginTop="50sp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80sp"
+            android:paddingHorizontal="20sp"
+            android:src="@drawable/instagram_logo" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="8sp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_email"
+                android:inputType="textEmailAddress"
+                android:hint="email"
+                android:paddingHorizontal="10sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8sp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_password"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:paddingHorizontal="10sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="log-in"
+            android:textSize="15sp"
+            android:layout_marginTop="30sp"
+            android:id="@+id/login_btn"
+            android:background="@drawable/login_button_click"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No account yet? Create one."
+            android:textSize="18sp"
+            android:gravity="center"
+            android:id="@+id/signUpLink"
+            android:paddingTop="10sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="2020200"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:id="@+id/verifyInfo"/>
+
+</RelativeLayout>

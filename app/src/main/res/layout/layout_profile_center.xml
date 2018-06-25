@@ -1,0 +1,107 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--  ******* Middle section  *******  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relLayout1"
+            android:id="@+id/relLayout2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingVertical="10sp"
+                android:id="@+id/linLayout"
+                android:padding="15sp">
+
+                <RelativeLayout
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:layout_marginLeft="10sp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        app:civ_border_width="0.5sp"
+                        app:civ_border_color="@color/black"
+                        android:id="@+id/profile_photo"
+                        android:src="@drawable/ic_profile"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="75"
+
+                    android:gravity="center">
+
+                    <include layout="@layout/snippet_profile_top"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linLayout"
+                android:orientation="vertical"
+                android:padding="20sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Darshan B S"
+                    android:id="@+id/display_name"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Live in Bangalore"
+                    android:id="@+id/description"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="http://darshancoding"
+                    android:id="@+id/website"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- Images Grid -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relLayout2"
+            android:id="@id/relLayout3"
+            android:layout_marginBottom="50sp">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerImageGrid"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</merge>

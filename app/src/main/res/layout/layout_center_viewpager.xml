@@ -1,0 +1,19 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--  ViewPagers are used to swipe through pages of data.
+                It’s generally used in conjunction with fragments.
+                Here one fragment replaced by another via swiping animation-->
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/container">
+
+        </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+
+</merge>

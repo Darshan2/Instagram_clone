@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- margins relative to parent layout -->
+    <item
+        android:top="1sp"
+        android:bottom="1sp"
+        android:left="1sp"
+        android:right="1sp">
+
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/white"/>
+            <stroke android:width="1sp"
+                android:color="@color/grey"/>
+        </shape>
+
+    </item>
+
+
+
+</layer-list>

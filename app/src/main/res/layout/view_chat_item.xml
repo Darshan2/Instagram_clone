@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/parent_relLayout"
+        android:layout_marginHorizontal="5sp"
+        android:layout_marginBottom="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="message from user"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:background="@drawable/chat_left_background"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/sent_messsage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="message to user"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/chat_right_background"
+            android:layout_alignParentRight="true"
+            android:id="@+id/received_message"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

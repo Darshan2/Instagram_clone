@@ -1,0 +1,61 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/white_grey_border_bottom">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:id="@+id/profileToolBar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relLayout1">
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginRight="10sp"
+                    android:src="@drawable/ic_back_arrow"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/backArrow" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/backArrow">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:src="@drawable/ic_profile"
+                        android:layout_marginRight="10sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        app:civ_border_width="0.5sp"
+                        app:civ_border_color="@color/black"
+                        android:id="@+id/profile_photo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_toRightOf="@+id/profile_photo"
+                        android:layout_height="80sp"
+                        android:text="UserName"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:id="@+id/userName"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+</merge>

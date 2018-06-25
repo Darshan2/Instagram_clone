@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Instagram_clone</string>
+
+    <!-- Fragment names -->
+    <string name="edit_profile_fragment">Edit Profile</string>
+    <string name="sign_out_fragment">Sign Out</string>
+    <string name="profile_fragment">Profile</string>
+    <string name="gallery_fragment">GalleryFragment</string>
+    <string name="photo_fragment">PhotoFragment</string>
+    <string name="view_post_fragment">view_post_fragment</string>
+    <string name="view_comment_fragment">view_comment_fragment</string>
+
+    <!-- Dialog names -->
+    <string name="dialog_cofirm_password">DialogConfirmPassword</string>
+
+    <!--DataBase nodes -->
+    <string name="users_node">users</string>
+    <string name="user_account_settings_node">user_account_settings</string>
+    <string name="photos_node">photos</string>
+    <string name="user_photos_node">user_photos</string>
+
+    <string name="user_name_field">user_name</string>
+    <string name="email_field">email</string>
+    <string name="description_field">description</string>
+    <string name="displayName_field">display_name</string>
+    <string name="phoneNumber_field">phone_number</string>
+    <string name="followers_field">followers</string>
+    <string name="following_field">following</string>
+    <string name="website_field">website</string>
+    <string name="posts_field">posts</string>
+    <string name="profile_photo_field">profile_photo</string>
+    <string name="likes_field">likes</string>
+    <string name="user_id_field">user_id</string>
+    <string name="comments_field">comments</string>
+    <string name="messages_node">messages</string>
+    <string name="chat_with_user_id_field">chat_with_user_id</string>
+
+    <!-- Photo types -->
+    <string name="new_photo">new_photo</string>
+    <string name="profile_photo">profile_photo</string>
+
+    <!-- Intent Extra -->
+    <string name="calling_activity">calling activity</string>
+    <string name="calling_fragment">calling fragment</string>
+    <string name="return_to_fragment">return_to_fragment</string>
+    <string name="image_url">image_url</string>
+    <string name="image_bitmap">image_bitmap</string>
+    <string name="activity_num">activity_num</string>
+    <string name="userId_intent">userId_intent</string>
+    <string name="userMatched_intent">userMatched_intent</string>
+
+    <!-- Activity names -->
+    <string name="profile_activity">ProfileActivity</string>
+    <string name="search_activity">SearchActivity</string>
+    <string name="home_activity">HomeActivity</string>
+
+    <!-- Random strings -->
+    <string name="gallery">GALLERY</string>
+    <string name="photo">PHOTO</string>
+
+    <string name="next">Next</string>
+    <string name="share">Share</string>
+    <string name="Default">default</string>
+
+
+</resources>
