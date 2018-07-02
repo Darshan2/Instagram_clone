@@ -33,7 +33,7 @@ When user first sign up, he has to provide his email to register. Using FireBase
 
 Main feed displays all the photos posted by current user, and by all the users followed by current users.
 <br>Top label of user name and profile photo, displays image posted user info.
-<br>User can like the photo by clicking on heart icon. or can comment on photo by clicking on comment bubble icon 
+<br>User can like the photo by clicking on heart icon. or can comment on photo by clicking on comment bubble icon. 
 <br>
 
 <p float="left">
@@ -42,7 +42,7 @@ Main feed displays all the photos posted by current user, and by all the users f
 </p>
 
 User can also take photo and share it with others.
-<br>User can chat with mutually(user1 follows user2, user2 also follow user1) followed users
+<br>User can chat with mutually(user1 follows user2, user2 also follow user1) followed users.
 <br><br>
 
 ### 3. Search feed
@@ -54,6 +54,28 @@ User can also take photo and share it with others.
 
 User can searh for any other registered users, by typing registerd user's user name. 
 <br>Current user can opt to follow/un-follow the search result user.
+<br><br>
+
+### 4. Share feed
+<p float="left">
+  <img src="images/share_feed/share_main_screen.png" width="300" /> 
+  <img src="images/share_feed/photo_upload_screen.png" width="300" />
+</p>
+
+User can select photos from device memory(from DCIM/Camera folders), or can take new photo by camera.
+And then share it by writing some caption.
+<br><br>
+
+### 5. Profile feed
+<p float="left">
+  <img src="images/profile_feed/main_profile_screen.png" width="280" /> 
+  <img src="images/profile_feed/edit_profile_screen.png" width="280" />
+  <img src="images/profile_feed/account_settings_optios_screen.png" width="280" />
+</p>
+
+Profile feed keep track of all the user activities, like number of photos shared, number of followers, following users.
+<br>User can change their profile photo. Or can edit their personal information here.
+<br>Here user can sign-out from the app.
 
 
 
