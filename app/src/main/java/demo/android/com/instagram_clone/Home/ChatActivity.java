@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -182,7 +183,7 @@ public class ChatActivity extends AppCompatActivity {
             }
         });
     }
-    
+
 
 
 
@@ -197,7 +198,7 @@ public class ChatActivity extends AppCompatActivity {
             currentUserId = currentUser.getUid();
 
         } else {
-
+            Toast.makeText(this, "Sign in failed", Toast.LENGTH_SHORT).show();
         }
     }
 }
