@@ -26,12 +26,35 @@ When user first sign up, he has to provide his email to register. Using FireBase
 
 ### 2. Main feed
 <p float="left">
-  <img src="images/main_ feed/shredphoto_display_screen.png" width="300" />
-  <img src="images/main_ feed/sharedphoto_display_screen_two.png" width="300" /> 
+  <img src="images/main_ feed/shredphoto_display_screen.png" width="280" />
+  <img src="images/main_ feed/sharedphoto_display_screen_two.png" width="280" /> 
+  <img src="images/main_ feed/comment_screen.png" width="280" />
 </p>
 
 Main feed displays all the photos posted by current user, and by all the users followed by current users.
 <br>Top label of user name and profile photo, displays image posted user info.
 <br>User can like the photo by clicking on heart icon. or can comment on photo by clicking on comment bubble icon 
+<br>
+
+<p float="left">
+  <img src="images/main_ feed/camera_sreen.png" width="300" /> 
+  <img src="images/main_ feed/chat_screen.png" width="300" />
+</p>
+
+User can also take photo and share it with others.
+<br>User can chat with mutually(user1 follows user2, user2 also follow user1) followed users
+<br><br>
+
+### 3. Search feed
+<p float="left">
+  <img src="images/search/search_screen.png" width="280" /> 
+  <img src="images/search/follow_user_screen.png" width="280" />
+  <img src="images/search/unfollow_user_screen.png" width="280" />
+</p>
+
+User can searh for any other registered users, by typing registerd user's user name. 
+<br>Current user can opt to follow/un-follow the search result user.
+
+
 
 
