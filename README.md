@@ -1,6 +1,8 @@
 # Instagram_clone
 
  App with all basic features of Instagram.
+ #### Note: Do not change device orientation(That part is not implemented).
+
  
 ## Included features 
 1.	Account settings - Sign up, Email verification, Sign in with verified email. 
